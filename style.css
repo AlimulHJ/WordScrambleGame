@@ -1,0 +1,98 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  width: 100%;
+  line-height: 15vh; /* makes vertically center */
+  background-color: rgb(176, 202, 202);
+}
+
+header > h1{
+  text-align: center;
+  color: white;
+  font-size: 1.8rem;
+  font-family: 'RocknRoll One', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+section{
+  height: 85vh;
+
+  /* make center */
+  display: flex;
+  justify-content: center;  /* horizontally center */
+  align-items: center; /* vertically center */
+  /* make center */
+
+  background-color: rgb(218, 252, 250);
+}
+
+.gameArea{
+  background-color: rgb(193, 248, 244);
+  width: 50%;
+  height: 400px;
+  padding: 20px 0;
+  font-family: 'Source Sans Pro', sans-serif;
+
+  /* making center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* making center */
+  
+  /* border: 1px solid black; */
+}
+
+.gameArea > h3{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.gameArea > input{
+  width: 40%;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+  background-color: #98cdd1;
+  color: black;
+  margin: 2rem 0;
+  font-size: 1.1rem;
+}
+
+.gameArea > button{
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  border:rgb(7, 46, 46);
+  margin-top: 10px;
+  color:rgb(4, 27, 27);
+}
+
+button.btn{
+  font-weight: 500;
+  padding: 1rem 2rem;
+  background: #99b3e6;
+  text-transform: uppercase;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.gameArea > button.btn:hover, button.btn:focus, button.btn:active{
+  letter-spacing: 0.125rem;
+  word-spacing: 0.2rem;
+}
+
+.gameArea > .hidden{
+  display: none;
+}
